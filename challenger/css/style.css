@@ -1,0 +1,124 @@
+/* RESET */
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN PARAMETER */
+
+:root{
+
+    --primary-color : #e52a07;
+    --secondary-color : white;
+    --font : 'Roboto', sans-serif;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    width: 100%;
+
+    font-family: var(--font);
+    font-size: 18px;
+}
+
+/* SECTION */
+
+section{
+
+    height:  50vh;
+    width: 100vw;
+    background-color:gainsboro
+}
+
+.newUser{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+
+
+/* START FORM NEW USER */
+
+h1{
+
+    font-size: 22px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: var(--primary-color) solid 6px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 450px; 
+    background-color: var(--secondary-color);
+}
+
+td {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+label{
+
+    font-weight: 500;
+}
+
+input[type="text"]{
+
+    border: grey solid 2px;
+    font-size: 16px;
+    height: 30px;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+input[type="submit"]{
+
+    margin: auto;
+    width: fit-content;
+    margin-top: 30px;
+    border: var(--primary-color) 4px solid;
+    background-color: var(--secondary-color);
+    padding: 7px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+input[type="submit"]:hover{
+
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+}
+/* END FORM NEW USER */
+
+
