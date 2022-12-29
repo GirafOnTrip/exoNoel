@@ -23,7 +23,7 @@
                             <label for="name">Prénom </label>
                         </td>
                         <td>
-                            <input type="text" name="name" id="name" required>
+                            <input type="text" name="name" id="name" placeholder="Jean" required>
                         </td>
                     </tr>
                     <tr>
@@ -31,7 +31,7 @@
                             <label for="age">Âge </label>
                         </td>
                         <td>
-                            <input type="text" name="age" id="age" required>
+                            <input type="text" name="age" id="age" placeholder="45" required>
                         </td>
                     </tr>
                     <tr>
@@ -39,7 +39,7 @@
                             <label for="account">Solde bancaire</label>
                         </td>
                         <td>
-                            <input type="text" name="account" id="account" required>
+                            <input type="text" name="account" id="account" placeholder="5000" required>
                         </td>
                     </tr>
 

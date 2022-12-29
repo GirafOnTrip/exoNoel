@@ -9,8 +9,19 @@ class CompteBancaire{
 
     public function deposer($somme){
 
-        $this->solde = $this->solde + $somme;
-        echo "Vous avez déposé ".$somme." €. Nouveau solde : ".$this->solde." € <br>";
+        if($somme == 0){
+
+            echo "Attention, veuillez saisir un montant autre que 0.<br>";
+        }
+        elseif($somme < 0){
+
+            echo "Erreur, veuillez saisir un montant positif.<br>";
+        } 
+        else{
+
+            $this->solde = $this->solde + $somme;
+            echo "Vous avez déposé ".$somme." €. Nouveau solde : ".$this->solde." € <br>";
+        }
     }
 
     public function retirer($somme){
@@ -45,7 +56,9 @@ $newCompte ->retirer(400);
 $newCompte ->retirer(-10);
 $newCompte -> retirer(0);
 $newCompte -> deposer(90);
-$newCompte -> retirer(91);
+$newCompte -> deposer(0);
+$newCompte -> deposer(-89);
+ 
 
 
 ?>
